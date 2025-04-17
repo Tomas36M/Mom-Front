@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+
+
+/* Aumenta la especificidad */
+.btn.btn-warning {
+    background-color: #b66b54 !important; /* Fuerza el color de fondo */
+    border-color: #b66b54 !important; /* Fuerza el color del borde */
+    color: #ffffff !important; /* Fuerza el color del texto */
+}
+
+.btn.btn-warning:hover {
+    background-color: #9c5a46 !important; /* Fuerza el color de fondo al hacer hover */
+    border-color: #9c5a46 !important; /* Fuerza el color del borde al hacer hover */
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+main {
+    line-height: 1.6;
+    background-color: #fff9f3;
+}
+
+main * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,31 @@
+.fixed-height {
+  height: 200px; /* Ajusta la altura según tus necesidades */
+  object-fit: cover;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title, .card-text {
+  margin-bottom: 10px;
+}
+
+.btn {
+  align-self: flex-start;
+}

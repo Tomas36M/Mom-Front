@@ -1,0 +1,88 @@
+.navbar {
+    background: #f8f9fa;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 0.5rem 1rem;
+}
+
+.navbarBrand {
+    color: #2d3436 !important;
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.navLink {
+    color: #495057 !important;
+    margin: 0 0.75rem;
+    padding: 0.5rem 1rem !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.navLink:hover {
+    background: #e9ecef;
+    color: #2d3436 !important;
+}
+
+.dropdownToggle {
+    background: none !important;
+    border: none;
+    color: #495057 !important;
+    padding: 0.5rem 1rem !important;
+    display: flex;
+    align-items: center;
+}
+
+.dropdownMenu {
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem !important;
+    border-radius: 8px !important;
+}
+
+.dropdownItem {
+    padding: 0.75rem 1.25rem !important;
+    transition: all 0.2s ease;
+}
+
+.dropdownItem:hover {
+    background: #f8f9fa !important;
+}
+
+.offcanvas {
+    background: #ffffff !important;
+}
+
+.offcanvasHeader {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.logoutButton {
+    background: none !important;
+    border: none;
+    color: #495057 !important;
+    padding: 0.5rem 1rem !important;
+}
+
+.logoutButton:hover {
+    color: #dc3545 !important;
+}
+
+.navbarToggler {
+    border: none !important;
+}
+
+@media (max-width: 992px) {
+    .navLink {
+        margin: 0.25rem 0;
+    }
+
+    .dropdownToggle {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

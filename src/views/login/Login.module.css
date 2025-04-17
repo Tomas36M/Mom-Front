@@ -1,0 +1,47 @@
+.loginContainer {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.loginFormContainer{
+    transition: all 0.3s ease;
+}
+
+.loginFormContainer:hover {
+    transform: scale(1.02);
+}
+
+.loginRow {
+    height: 100%;
+}
+
+.leftContainer {
+    height: 100%;
+}
+
+.additionalImageContainer {
+    flex: 1;
+    display: flex;
+    width: 100%;
+}
+
+.additionalImage {
+    width: 100%;
+    height: auto;
+    
+}
+
+.loginImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+@media (max-width: 768px) {
+    .loginImage {
+        margin-top: 20px;  
+        margin-bottom: 20px;  
+    }
+}

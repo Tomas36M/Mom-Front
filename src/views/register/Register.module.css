@@ -1,0 +1,50 @@
+.registerContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding: 20px;
+}
+
+.registerRow {
+    flex-grow: 1; /* Ocupa todo el espacio disponible */
+    margin: 0; /* Elimina márgenes predeterminados de Bootstrap */
+}
+
+.leftContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-right: 0;
+}
+
+@media (min-width: 768px) {
+    .leftContainer {
+        padding-right: 20px;
+    }
+}
+
+.imgContainer {
+    position: relative;
+    padding: 0 !important; /* Fuerza padding cero */
+    overflow: hidden; /* Evita desbordamientos */
+}
+
+.registerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute; /* Cubre todo el contenedor */
+    top: 0;
+    left: 0;
+}
+
+.loginFormContainer {
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.loginFormContainer:hover {
+    transform: scale(1.02);
+}

@@ -1,0 +1,12 @@
+.loginFormContainer {
+    flex: 1;
+    display: flex;
+    width: 100%;
+}
+
+.loginForm {
+    width: 100%;
+    background-color:#fffbf5;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
