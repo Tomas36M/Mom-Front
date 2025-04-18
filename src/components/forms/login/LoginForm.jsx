@@ -7,6 +7,7 @@ const LoginForm = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState({ username: '', password: '' });
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const { login } = useContext(UserContext);
 
@@ -29,7 +30,12 @@ const LoginForm = () => {
         setErrors(newErrors);
 
         if (!newErrors.username && !newErrors.password) {
-            await login(username, password)
+            try {
+                setIsSubmitting(true);
+                await login(username, password);
+            } finally {
+                setIsSubmitting(false);
+            }
         }
     };
 
@@ -68,7 +74,24 @@ const LoginForm = () => {
                         <div className="invalid-feedback">{errors.password}</div>
                     )}
                 </div>
-                <button type="submit" className="btn btn-warning">Iniciar Sesión</button>
+                <button
+                    type="submit"
+                    className="btn btn-warning"
+                    disabled={isSubmitting}
+                >
+                    {isSubmitting ? (
+                        <>
+                            <span
+                                className="spinner-border spinner-border-sm"
+                                role="status"
+                                aria-hidden="true"
+                            ></span>
+                            <span className="visually-hidden">Cargando...</span>
+                        </>
+                    ) : (
+                        'Iniciar Sesión'
+                    )}
+                </button>
             </form>
         </div>
     );

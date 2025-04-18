@@ -19,6 +19,7 @@ const RegisterForm = () => {
     });
 
     const [errors, setErrors] = useState({});
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -31,6 +32,7 @@ const RegisterForm = () => {
 
         if (Object.keys(newErrors).length === 0) {
             try {
+                setIsSubmitting(true);
                 const data = new FormData();
                 for (const key in formData) {
                     data.append(key, formData[key]);
@@ -44,11 +46,13 @@ const RegisterForm = () => {
                 showSuccessAlert('Registered successfully', 'Welcome!');
                 navigate('/login');
             } catch (error) {
-                showErrorAlert('Registration failed', error.response.data.message);
+                showErrorAlert('Registration failed', error.response?.data?.message || 'Error desconocido');
                 console.error('Error:', error.response ? error.response.data : error.message);
+            } finally {
+                setIsSubmitting(false);
             }
         }
-    };
+    }
 
     return (
         <div className='pb-4'>
@@ -131,10 +135,26 @@ const RegisterForm = () => {
                     />
                     {errors.password && <div className="invalid-feedback">{errors.password}</div>}
                 </div>
-                <button type="submit" className="btn btn-warning">Regístrate</button>
+                <button
+                    type="submit"
+                    className="btn btn-warning"
+                    disabled={isSubmitting}
+                >
+                    {isSubmitting ? (
+                        <>
+                            <span
+                                className="spinner-border spinner-border-sm"
+                                role="status"
+                                aria-hidden="true"
+                            ></span>
+                            <span className="visually-hidden">Cargando...</span>
+                        </>
+                    ) : (
+                        'Regístrate'
+                    )}
+                </button>
             </form>
         </div>
     );
 };
-
 export default RegisterForm;
