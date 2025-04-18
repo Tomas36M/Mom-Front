@@ -20,12 +20,6 @@ const RegisterForm = () => {
 
     const [errors, setErrors] = useState({});
 
-    const [imageFile, setImageFile] = useState(null);
-
-    const handleFileChange = (e) => {
-        setImageFile(e.target.files[0]);
-    };
-
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
@@ -40,9 +34,6 @@ const RegisterForm = () => {
                 const data = new FormData();
                 for (const key in formData) {
                     data.append(key, formData[key]);
-                }
-                if (imageFile) {
-                    data.append('image', imageFile);
                 }
 
                 await axios.post('https://mom-webpage.onrender.com/users/register', data, {
