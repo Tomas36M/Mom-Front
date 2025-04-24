@@ -19,7 +19,7 @@ const LandingCard = () => {
                             <div className={styles.cardText}>
                                 <p>Diseñadora especializada en joyería con más de 40 años de experiencia, creando piezas que reflejan elegancia y sofisticación.</p>
                             </div>
-                            <Link className={`btn btn-warning`} to="/about-lina">Solicitar Turno</Link>
+                            <Link className={`btn btn-warning`} to="/about-lina">Conoce mas</Link>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const LandingCard = () => {
                             <div className={styles.cardText}>
                                 <p>Descubre piezas exclusivas diseñadas por Lina, cada una con un carácter único y estilo distintivo que las hace especiales.</p>
                             </div>
-                            <Link className={`btn btn-warning`} to="/products">Solicitar Turno</Link>
+                            <Link className={`btn btn-warning`} to="/products">Conoce mas</Link>
                         </div>
                     </div>
                 </div>
