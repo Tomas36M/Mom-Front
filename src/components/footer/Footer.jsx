@@ -10,7 +10,7 @@ const Footer = () => {
                         <div className={`${styles.linksWrapper} d-flex flex-column flex-md-row gap-3 justify-content-md-end`}>
                             <Link className={styles.link} to="/contact">Contacto</Link>                     
                             <a href="https://www.instagram.com/linaescala/" target="_blank" rel="noopener noreferrer" className={styles.link}>Instagram</a>
-                            <Link href="/about-lina" className={styles.link}>About</Link>
+                            <Link to="/about-lina" className={styles.link}>About</Link>
                             <a href="/login" className={styles.link}>Login</a>
                         </div>
                     </div>
