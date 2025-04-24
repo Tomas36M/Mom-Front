@@ -8,9 +8,9 @@ const Footer = () => {
                 <div className="row g-3 text-center text-md-start">
                     <div className="col-md-6 order-md-2">
                         <div className={`${styles.linksWrapper} d-flex flex-column flex-md-row gap-3 justify-content-md-end`}>
-                            <Link className={styles.link} to="/home">Contacto</Link>                     
+                            <Link className={styles.link} to="/contact">Contacto</Link>                     
                             <a href="https://www.instagram.com/linaescala/" target="_blank" rel="noopener noreferrer" className={styles.link}>Instagram</a>
-                            <a href="/about-lina" className={styles.link}>About</a>
+                            <Link href="/about-lina" className={styles.link}>About</Link>
                             <a href="/login" className={styles.link}>Login</a>
                         </div>
                     </div>
