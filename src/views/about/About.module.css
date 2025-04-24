@@ -1,0 +1,347 @@
+/* AboutLina.module.css */
+.aboutPage {
+    background-color: #fff9f3;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.heroSection {
+    background: linear-gradient(135deg, #fdf7f2 0%, #e8d9c9 100%);
+    padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.heroContent {
+    text-align: center;
+    max-width: 800px;
+    z-index: 2;
+}
+
+.heroTitle {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.heroSubtitle {
+    font-size: 1.5rem;
+    color: #b66b54;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.heroText {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.heroImageWrapper {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease;
+}
+
+.heroImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.heroImageWrapper:hover {
+    transform: translateY(-10px);
+}
+
+.heroImageWrapper:hover .heroImage {
+    transform: scale(1.05);
+}
+
+/* Section Styles */
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.sectionIcon {
+    font-size: 2.5rem;
+    color: #b66b54;
+    margin-bottom: 1rem;
+}
+
+.sectionTitle {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    position: relative;
+    display: inline-block;
+}
+
+.sectionTitle:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #b66b54;
+}
+
+/* Bio Section */
+.bioSection {
+    padding: 3rem 0;
+}
+
+.bioCard {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.bioContent {
+    padding: 2rem;
+    font-size: 1.1rem;
+}
+
+.bioContent p {
+    margin-bottom: 1.5rem;
+}
+
+.bioImageWrapper {
+    position: relative;
+}
+
+.bioImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.bioImageCaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(44, 62, 80, 0.8);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Education Section */
+.educationSection {
+    padding: 2rem 0;
+}
+
+.educationCard {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.educationCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.educationIcon {
+    font-size: 2.5rem;
+    color: #b66b54;
+    margin-bottom: 1.5rem;
+}
+
+.educationTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.educationMeta {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.educationInstitution {
+    display: block;
+    font-weight: 500;
+    color: #b66b54;
+}
+
+.educationYear {
+    display: block;
+    color: #7f8c8d;
+}
+
+.educationDescription {
+    font-size: 0.95rem;
+}
+
+/* Work Section */
+.workSection {
+    padding: 2rem 0;
+}
+
+.workCard {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.workCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.workImageWrapper {
+    height: 200px;
+    overflow: hidden;
+}
+
+.workImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.workCard:hover .workImage {
+    transform: scale(1.1);
+}
+
+.workContent {
+    padding: 1.5rem;
+}
+
+.workTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #2c3e50;
+}
+
+.workYear {
+    display: block;
+    font-size: 0.9rem;
+    color: #b66b54;
+    margin-bottom: 1rem;
+}
+
+.workDescription {
+    font-size: 0.95rem;
+}
+
+/* Philosophy Section */
+.philosophySection {
+    padding: 2rem 0;
+}
+
+.philosophyGrid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.philosophyCard {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.philosophyCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.philosophyTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #b66b54;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.philosophyTitle:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #b66b54;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .heroContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .heroContent {
+        text-align: left;
+        max-width: 50%;
+    }
+    
+    .bioCard {
+        flex-direction: row;
+    }
+    
+    .bioContent {
+        flex: 1;
+    }
+    
+    .bioImageWrapper {
+        flex: 1;
+    }
+    
+    .bioImage {
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+    
+    .heroSubtitle {
+        font-size: 1.2rem;
+    }
+    
+    .sectionTitle {
+        font-size: 1.8rem;
+    }
+}

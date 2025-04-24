@@ -10,6 +10,8 @@ import UserHome from './views/user/userHome/UserHome'
 import UserAppointments from './views/user/userAppointments/UserAppointments'
 import CreateAppointment from './views/user/craeteAppointment/CreateAppointment'
 import ProtectedRoute from './components/protectedRoute/ProtectedRoute'
+import AboutLina from './views/about/About'
+import Contact from './views/contact/Contact'
 import { Routes, Route } from 'react-router-dom'
 
 
@@ -26,6 +28,8 @@ const App = () => {
                 <Route path="/profile" element={<ProtectedRoute element={<UserProfile />}/>}/>
                 <Route path="/appointments" element={<ProtectedRoute element={<UserAppointments />}/>}/>
                 <Route path="/newappointment" element={<ProtectedRoute element={<CreateAppointment />}/>}/>
+                <Route path="/about-lina" element={<AboutLina/>}/>
+                <Route path="/contact" element={<Contact/>}/>
                 <Route path="*" element={<ErrorPage />}/>             
             </Routes>
             <Footer />

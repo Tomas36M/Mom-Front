@@ -41,7 +41,7 @@ const LandingCard = () => {
                             <div className={styles.cardText}>
                                 <p>Gestionamos tus solicitudes para productos personalizados con un sistema de turnos que asegura atención exclusiva y a medida.</p>
                             </div>
-                            <a className={`btn btn-warning`} href="/turnos">
+                            <a className={`btn btn-warning`} href="/login">
                                 Solicitar Turno
                             </a>
                         </div>
@@ -63,7 +63,7 @@ const LandingCard = () => {
                             <div className={styles.cardText}>
                                 <p>Descubre piezas exclusivas diseñadas por Lina, cada una con un carácter único y estilo distintivo que las hace especiales.</p>
                             </div>
-                            <a className={`btn btn-warning`} href="/productos">
+                            <a className={`btn btn-warning`} href="/products">
                                 Descubre Más
                             </a>
                         </div>

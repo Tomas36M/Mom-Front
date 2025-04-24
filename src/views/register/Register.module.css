@@ -1,50 +1,99 @@
 .registerContainer {
     width: 100%;
+    padding:20px;
     min-height: 100vh;
     display: flex;
-    padding: 20px;
+    align-items: center;
+    background-color: #fff9f3;
+    box-sizing: border-box;
+}
+
+.registerWrapper {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .registerRow {
-    flex-grow: 1; /* Ocupa todo el espacio disponible */
-    margin: 0; /* Elimina márgenes predeterminados de Bootstrap */
+    display: flex;
+    width: 100%;
+    min-height: 600px; /* Altura mínima para ambos lados */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.leftContainer {
+.formCard {
+    flex: 1;
+    min-width: 50%;
+    background: white;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    padding-right: 0;
 }
 
-@media (min-width: 768px) {
-    .leftContainer {
-        padding-right: 20px;
-    }
-}
-
-.imgContainer {
+.imageCard {
+    background: white;
+    flex: 1;
+    min-width: 50%;
     position: relative;
-    padding: 0 !important; /* Fuerza padding cero */
-    overflow: hidden; /* Evita desbordamientos */
+    overflow: hidden;
 }
 
 .registerImage {
+    padding: 20px;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    position: absolute; /* Cubre todo el contenedor */
+    display: block;
+}
+
+/* Estilos para mantener relación de aspecto 1:1 en desktop */
+.imageCard::before {
+    content: '';
+    display: block;
+    padding-top: 100%; /* Relación 1:1 */
+}
+
+.registerImage {
+    position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .loginFormContainer {
     width: 100%;
-    transition: all 0.3s ease;
 }
 
-.loginFormContainer:hover {
-    transform: scale(1.02);
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+    .registerContainer {
+        padding: 20px;
+    }
+    
+    .registerRow {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .formCard, .imageCard {
+        min-width: 100%;
+    }
+    
+    .formCard {
+        padding: 30px;
+        order: 2; /* Formulario abajo */
+    }
+    
+    .imageCard {
+        order: 1; /* Imagen arriba */
+        height: 300px;
+    }
+    
+    .imageCard::before {
+        padding-top: 0; /* Anulamos el padding para mobile */
+    }
 }

@@ -1,0 +1,104 @@
+/* Contact.module.css */
+.contactSection {
+    background-color: #fdf7f2;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.contactTitle {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.contactSubtitle {
+    color: #b66b54;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.contactInfo {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+.infoTitle {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.infoItem {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.infoIcon {
+    color: #b66b54;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 0.3rem;
+}
+
+.infoLabel {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.infoItem p {
+    color: #2c3e50;
+    margin-bottom: 0.2rem;
+}
+
+.contactForm {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.formTitle {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.formLabel {
+    color: #2c3e50;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.formInput {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.formInput:focus {
+    border-color: #b66b54;
+    box-shadow: 0 0 0 0.25rem rgba(182, 107, 84, 0.25);
+}
+
+.submitButton {
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.mapContainer {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
