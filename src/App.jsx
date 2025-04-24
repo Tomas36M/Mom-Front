@@ -24,12 +24,12 @@ const App = () => {
                 <Route path='/' element={<Home/>} />
                 <Route path='/register' element={<Register />} />
                 <Route path="/login" element={<Login />}/>
+                <Route path="/about-lina" element={<AboutLina/>}/>
+                <Route path="/contact" element={<Contact/>}/>
                 <Route path="/home" element={<ProtectedRoute element={<UserHome />}/>}/>
                 <Route path="/profile" element={<ProtectedRoute element={<UserProfile />}/>}/>
                 <Route path="/appointments" element={<ProtectedRoute element={<UserAppointments />}/>}/>
                 <Route path="/newappointment" element={<ProtectedRoute element={<CreateAppointment />}/>}/>
-                <Route path="/about-lina" element={<AboutLina/>}/>
-                <Route path="/contact" element={<Contact/>}/>
                 <Route path="*" element={<ErrorPage />}/>             
             </Routes>
             <Footer />
