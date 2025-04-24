@@ -1,4 +1,5 @@
 import styles from './Footer.module.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -7,8 +8,8 @@ const Footer = () => {
                 <div className="row g-3 text-center text-md-start">
                     <div className="col-md-6 order-md-2">
                         <div className={`${styles.linksWrapper} d-flex flex-column flex-md-row gap-3 justify-content-md-end`}>
-                            <a href="/contact" className={styles.link}>Contacto</a>
-                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className={styles.link}>Instagram</a>
+                            <Link className={styles.link} to="/home">Contacto</Link>                     
+                            <a href="https://www.instagram.com/linaescala/" target="_blank" rel="noopener noreferrer" className={styles.link}>Instagram</a>
                             <a href="/about-lina" className={styles.link}>About</a>
                             <a href="/login" className={styles.link}>Login</a>
                         </div>

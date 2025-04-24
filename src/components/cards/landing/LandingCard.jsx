@@ -1,5 +1,5 @@
 import styles from './LandingCard.module.css';
-
+import { Link } from 'react-router-dom';
 const LandingCard = () => {
     return (
         <div className={`container ${styles.cardContainer}`}>
@@ -19,9 +19,7 @@ const LandingCard = () => {
                             <div className={styles.cardText}>
                                 <p>Diseñadora especializada en joyería con más de 40 años de experiencia, creando piezas que reflejan elegancia y sofisticación.</p>
                             </div>
-                            <a className={`btn btn-warning`} href="/about-lina">
-                                Conoce Más
-                            </a>
+                            <Link className={`btn btn-warning`} to="/about-lina">Solicitar Turno</Link>
                         </div>
                     </div>
                 </div>
@@ -41,9 +39,7 @@ const LandingCard = () => {
                             <div className={styles.cardText}>
                                 <p>Gestionamos tus solicitudes para productos personalizados con un sistema de turnos que asegura atención exclusiva y a medida.</p>
                             </div>
-                            <a className={`btn btn-warning`} href="/login">
-                                Solicitar Turno
-                            </a>
+                            <Link className={`btn btn-warning`} to="/login">Solicitar Turno</Link>
                         </div>
                     </div>
                 </div>
@@ -63,9 +59,7 @@ const LandingCard = () => {
                             <div className={styles.cardText}>
                                 <p>Descubre piezas exclusivas diseñadas por Lina, cada una con un carácter único y estilo distintivo que las hace especiales.</p>
                             </div>
-                            <a className={`btn btn-warning`} href="/products">
-                                Descubre Más
-                            </a>
+                            <Link className={`btn btn-warning`} to="/products">Solicitar Turno</Link>
                         </div>
                     </div>
                 </div>
